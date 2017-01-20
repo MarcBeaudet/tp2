@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Voiture et Utilitaires entre particuliers - Drivy</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="https://d2y2masl4rtrav.cloudfront.net/assets/homepage-d59495d071dd5250beb7e0eef4f5ad55cfd93ee763c36375b0e234140882c2d8.css" /><link href='https://d2y2masl4rtrav.cloudfront.net/assets/vendor-4eb112cda7496eb1161556e37a17a004f8ff5d5cc4ae5e22338e95841166ccae.css' rel='prefetch'>
+</head>
+<body>
+  
+<div class="content">
+  <div id="car" style="
+    margin: auto;
+    padding: 10px; ">
+      <input class="model" type="text" placeholder="Car model">
+      <input class="price-by-day" type="number" placeholder="Price by day">
+      <input class="price-by-km" type="number" placeholder="Price by km">
+    </div>
+    <div id="rental" style="
+    margin: auto; 
+    padding: 10px; ">
+      <input class="begin" type="date" placeholder="Rental begin date">
+      <input class="end" type="date" placeholder="Rental end date">
+      <input class="distance" type="number" placeholder="Distance in km">
+      <input class="option" type="checkbox" placeholder="Deductible option" style=" ">
+    </div>
+  <button id="compute" style="
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+">Compute</button>
+</div><!-- /content -->
+
+
+<video id="my-video" class="video" muted loop>
+  <source src="media/demo.mp4" type="video/mp4">
+  <source src="media/demo.ogv" type="video/ogg">
+  <source src="media/demo.webm" type="video/webm">
+</video><!-- /video -->
+
+
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+
+
+</body>
+</html>
